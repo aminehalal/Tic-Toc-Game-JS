@@ -15,7 +15,13 @@ function resetTheGame(){
       div.innerHTML = "";
     })
     winningSpan.textContent = "No Winner Yet!" ;
-    canPlay = true ;   
+    canPlay = true ; 
+    for (let i = 0; i < 3; i++) {
+        matrix[i] = [];
+        for (let j = 0; j < 3; j++) {
+          matrix[i][j] = null; // You can use null for an empty matrix
+        }
+      }  
 }
 
 
